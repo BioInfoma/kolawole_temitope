@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioPortfolio - Computational Biology & Bioinformatics Expert</title>
+    <meta name="description" content="Professional bioinformatics portfolio showcasing computational biology projects, research expertise, and data analysis capabilities." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fbioportfol3755back.builtwithrocket.new&_v=0.1.2"></script>
+</head>
+<body class="bg-background font-body">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-scientific-sm sticky top-0 z-fixed">
+        <div class="max-w-scientific mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-scientific flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-inter font-semibold text-text-primary">BioPortfolio</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home_landing_page.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Home</a>
+                    <a href="projects_gallery.html" class="text-text-secondary hover:text-primary transition-micro">Projects</a>
+                    <a href="about_professional_bio.html" class="text-text-secondary hover:text-primary transition-micro">About</a>
+                    <a href="skills_expertise.html" class="text-text-secondary hover:text-primary transition-micro">Skills</a>
+                    <a href="contact_collaboration.html" class="text-text-secondary hover:text-primary transition-micro">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 pb-4 border-t border-border hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="home_landing_page.html" class="text-primary font-semibold">Home</a>
+                    <a href="projects_gallery.html" class="text-text-secondary">Projects</a>
+                    <a href="about_professional_bio.html" class="text-text-secondary">About</a>
+                    <a href="skills_expertise.html" class="text-text-secondary">Skills</a>
+                    <a href="contact_collaboration.html" class="text-text-secondary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-analytical py-16 md:py-24">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <!-- Professional Headshot -->
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-scientific-lg">
+                    <img src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dr. Sarah Chen - Bioinformatics Expert" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                </div>
+                
+                <!-- Hero Content -->
+                <div class="flex-1 text-center md:text-left">
+                    <h1 class="text-4xl md:text-5xl font-inter font-bold text-text-primary mb-4">
+                        Dr. Sarah Chen
+                    </h1>
+                    <p class="text-xl md:text-2xl text-secondary font-semibold mb-6">
+                        Computational Biology & Bioinformatics Expert
+                    </p>
+                    <p class="text-lg text-text-secondary mb-8 max-w-2xl">
+                        Transforming biological data into actionable insights through advanced computational methods, 
+                        machine learning, and statistical analysis. Specializing in genomics, proteomics, and 
+                        systems biology with 8+ years of research experience.
+                    </p>
+                    
+                    <!-- Quick Stats -->
+                    <div class="grid grid-cols-3 gap-6 mb-8">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-primary" id="projects-counter">0</div>
+                            <div class="text-sm text-text-secondary font-caption">Projects</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-secondary" id="publications-counter">0</div>
+                            <div class="text-sm text-text-secondary font-caption">Publications</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-accent" id="experience-counter">0</div>
+                            <div class="text-sm text-text-secondary font-caption">Years Experience</div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <a href="projects_gallery.html" class="btn-scientific bg-primary text-white hover:bg-primary-700">
+                            View Full Portfolio
+                        </a>
+                        <a href="contact_collaboration.html" class="btn-scientific bg-secondary text-white hover:bg-secondary-800">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    Featured Projects
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Explore my latest bioinformatics research and computational biology projects
+                </p>
+            </div>
+            
+            <!-- Projects Carousel -->
+            <div class="relative">
+                <div class="flex overflow-x-auto gap-6 pb-4 snap-x snap-mandatory" id="projects-carousel">
+                    <!-- Project Card 1 -->
+                    <div class="card-scientific min-w-80 p-6 snap-start">
+                        <div class="aspect-video bg-primary-50 rounded-scientific mb-4 overflow-hidden">
+                            <img src="https://images.pixabay.com/photo/2020/07/08/04/12/dna-5382295_1280.jpg" alt="Genomic Data Visualization" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-2">
+                            Cancer Genomics Analysis Pipeline
+                        </h3>
+                        <p class="text-text-secondary mb-4">
+                            Developed automated pipeline for analyzing whole-genome sequencing data to identify 
+                            cancer-associated mutations and biomarkers.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 text-sm rounded-full">Python</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary-800 text-sm rounded-full">R</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 text-sm rounded-full">Bioconductor</span>
+                        </div>
+                        <a href="project_detail_case_study.html" class="text-primary font-semibold hover:text-primary-700 transition-micro">
+                            View Details →
+                        </a>
+                    </div>
+                    
+                    <!-- Project Card 2 -->
+                    <div class="card-scientific min-w-80 p-6 snap-start">
+                        <div class="aspect-video bg-secondary-50 rounded-scientific mb-4 overflow-hidden">
+                            <img src="https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Protein Structure Analysis" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-2">
+                            Protein-Drug Interaction Predictor
+                        </h3>
+                        <p class="text-text-secondary mb-4">
+                            Machine learning model to predict protein-drug interactions using structural and 
+                            sequence-based features for drug discovery.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 text-sm rounded-full">TensorFlow</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary-800 text-sm rounded-full">PyMOL</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 text-sm rounded-full">ChEMBL</span>
+                        </div>
+                        <a href="project_detail_case_study.html" class="text-primary font-semibold hover:text-primary-700 transition-micro">
+                            View Details →
+                        </a>
+                    </div>
+                    
+                    <!-- Project Card 3 -->
+                    <div class="card-scientific min-w-80 p-6 snap-start">
+                        <div class="aspect-video bg-accent-50 rounded-scientific mb-4 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=800&auto=format&fit=crop" alt="Systems Biology Network" class="w-full h-full object-cover" onerror="this.src='https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=800'; this.onerror=null;" />
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-2">
+                            Systems Biology Network Analysis
+                        </h3>
+                        <p class="text-text-secondary mb-4">
+                            Comprehensive analysis of gene regulatory networks to understand disease mechanisms 
+                            and identify therapeutic targets.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 text-sm rounded-full">Cytoscape</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary-800 text-sm rounded-full">NetworkX</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 text-sm rounded-full">KEGG</span>
+                        </div>
+                        <a href="project_detail_case_study.html" class="text-primary font-semibold hover:text-primary-700 transition-micro">
+                            View Details →
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Carousel Navigation -->
+                <div class="flex justify-center mt-6 gap-2">
+                    <button class="w-3 h-3 rounded-full bg-primary" id="carousel-dot-1"></button>
+                    <button class="w-3 h-3 rounded-full bg-border" id="carousel-dot-2"></button>
+                    <button class="w-3 h-3 rounded-full bg-border" id="carousel-dot-3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Overview Section -->
+    <section class="py-16 bg-primary-50">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    Core Expertise
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Specialized skills in computational biology and bioinformatics
+                </p>
+            </div>
+            
+            <!-- Skills Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="bg-surface p-4 rounded-scientific text-center hover:shadow-scientific-md transition-smooth cursor-pointer" onclick="filterProjects('genomics')">
+                    <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary">Genomics</h3>
+                </div>
+                
+                <div class="bg-surface p-4 rounded-scientific text-center hover:shadow-scientific-md transition-smooth cursor-pointer" onclick="filterProjects('proteomics')">
+                    <div class="w-12 h-12 bg-secondary-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary">Proteomics</h3>
+                </div>
+                
+                <div class="bg-surface p-4 rounded-scientific text-center hover:shadow-scientific-md transition-smooth cursor-pointer" onclick="filterProjects('machine-learning')">
+                    <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary">Machine Learning</h3>
+                </div>
+                
+                <div class="bg-surface p-4 rounded-scientific text-center hover:shadow-scientific-md transition-smooth cursor-pointer" onclick="filterProjects('systems-biology')">
+                    <div class="w-12 h-12 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary">Systems Biology</h3>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <a href="skills_expertise.html" class="btn-scientific bg-primary text-white hover:bg-primary-700">
+                    View All Skills
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    What Colleagues Say
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Testimonials from research collaborators and industry partners
+                </p>
+            </div>
+            
+            <!-- Testimonials Slider -->
+            <div class="relative max-w-4xl mx-auto">
+                <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-500" id="testimonials-slider">
+                        <!-- Testimonial 1 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-primary-50 p-8 rounded-scientific text-center">
+                                <div class="w-16 h-16 bg-primary-200 rounded-full mx-auto mb-4 overflow-hidden">
+                                    <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Dr. Michael Rodriguez" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                                </div>
+                                <blockquote class="text-lg text-text-primary mb-4 italic">
+                                    "Sarah's expertise in computational genomics was instrumental in our cancer research project. 
+                                    Her innovative approach to data analysis led to breakthrough discoveries."
+                                </blockquote>
+                                <cite class="text-primary font-semibold">Dr. Michael Rodriguez</cite>
+                                <p class="text-text-secondary text-sm">Principal Investigator, Stanford Medicine</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="w-full flex-shrink-0 px-4">
+                            <div class="bg-secondary-50 p-8 rounded-scientific text-center">
+                                <div class="w-16 h-16 bg-secondary-200 rounded-full mx-auto mb-4 overflow-hidden">
+                                    <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dr. Emily Watson" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b332c5c0?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                                </div>
+                                <blockquote class="text-lg text-text-primary mb-4 italic">
+                                    "Working with Sarah on protein structure prediction was exceptional. Her machine learning 
+                                    models achieved unprecedented accuracy in our drug discovery pipeline."
+                                </blockquote>
+                                <cite class="text-secondary font-semibold">Dr. Emily Watson</cite>
+                                <p class="text-text-secondary text-sm">Head of Computational Biology, Genentech</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slider Controls -->
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-surface shadow-scientific-md p-2 rounded-full" id="prev-testimonial">
+                    <svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-surface shadow-scientific-md p-2 rounded-full" id="next-testimonial">
+                    <svg class="w-5 h-5 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-analytical">
+        <div class="max-w-scientific mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                Ready to Collaborate?
+            </h2>
+            <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                Let's discuss how computational biology and bioinformatics can advance your research or business goals.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_collaboration.html" class="btn-scientific bg-primary text-white hover:bg-primary-700">
+                    Start a Conversation
+                </a>
+                <a href="projects_gallery.html" class="btn-scientific bg-surface text-primary border border-primary hover:bg-primary-50">
+                    Explore My Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-scientific flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <span class="text-lg font-inter font-semibold">BioPortfolio</span>
+                    </div>
+                    <p class="text-gray-300 text-sm">
+                        Advancing scientific discovery through computational biology and bioinformatics expertise.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="projects_gallery.html" class="block text-gray-300 hover:text-white transition-micro">Projects</a>
+                        <a href="about_professional_bio.html" class="block text-gray-300 hover:text-white transition-micro">About</a>
+                        <a href="skills_expertise.html" class="block text-gray-300 hover:text-white transition-micro">Skills</a>
+                        <a href="contact_collaboration.html" class="block text-gray-300 hover:text-white transition-micro">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold mb-4">Connect</h3>
+                    <div class="space-y-2 text-gray-300 text-sm">
+                        <p>sarah.chen@bioportfolio.com</p>
+                        <p>LinkedIn: /in/sarahchen-bio</p>
+                        <p>ORCID: 0000-0002-1234-5678</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300 text-sm">
+                <p>© 2025 BioPortfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Animated counters
+        function animateCounter(elementId, targetValue, duration = 2000) {
+            const element = document.getElementById(elementId);
+            let startValue = 0;
+            const increment = targetValue / (duration / 16);
+            
+            const timer = setInterval(() => {
+                startValue += increment;
+                if (startValue >= targetValue) {
+                    element.textContent = targetValue;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(startValue);
+                }
+            }, 16);
+        }
+
+        // Start counters when page loads
+        window.addEventListener('load', () => {
+            animateCounter('projects-counter', 45);
+            animateCounter('publications-counter', 23);
+            animateCounter('experience-counter', 8);
+        });
+
+        // Testimonials slider
+        let currentTestimonial = 0;
+        const testimonialSlider = document.getElementById('testimonials-slider');
+        const totalTestimonials = 2;
+
+        document.getElementById('next-testimonial').addEventListener('click', () => {
+            currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+            testimonialSlider.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+        });
+
+        document.getElementById('prev-testimonial').addEventListener('click', () => {
+            currentTestimonial = (currentTestimonial - 1 + totalTestimonials) % totalTestimonials;
+            testimonialSlider.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+        });
+
+        // Auto-advance testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+            testimonialSlider.style.transform = `translateX(-${currentTestimonial * 100}%)`;
+        }, 5000);
+
+        // Skills filter function (redirects to projects page with filter)
+        function filterProjects(category) {
+            window.location.href = `projects_gallery.html?filter=${category}`;
+        }
+
+        // Carousel dots functionality
+        const carouselDots = document.querySelectorAll('[id^="carousel-dot-"]');
+        carouselDots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                const carousel = document.getElementById('projects-carousel');
+                const cardWidth = 320 + 24; // card width + gap
+                carousel.scrollTo({
+                    left: index * cardWidth,
+                    behavior: 'smooth'
+                });
+                
+                // Update active dot
+                carouselDots.forEach(d => d.classList.remove('bg-primary'));
+                carouselDots.forEach(d => d.classList.add('bg-border'));
+                dot.classList.remove('bg-border');
+                dot.classList.add('bg-primary');
+            });
+        });
+
+        // Update carousel dots on scroll
+        document.getElementById('projects-carousel').addEventListener('scroll', (e) => {
+            const scrollLeft = e.target.scrollLeft;
+            const cardWidth = 320 + 24;
+            const activeIndex = Math.round(scrollLeft / cardWidth);
+            
+            carouselDots.forEach((dot, index) => {
+                if (index === activeIndex) {
+                    dot.classList.remove('bg-border');
+                    dot.classList.add('bg-primary');
+                } else {
+                    dot.classList.remove('bg-primary');
+                    dot.classList.add('bg-border');
+                }
+            });
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cancer Genomics Analysis Pipeline - Project Case Study | BioPortfolio</title>
+    <meta name="description" content="Comprehensive case study of cancer genomics analysis pipeline showcasing bioinformatics methodology and technical expertise in computational biology." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fbioportfol3755back.builtwithrocket.new&_v=0.1.2"></script>
+</head>
+<body class="bg-background font-body">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-scientific-sm sticky top-0 z-fixed">
+        <div class="max-w-scientific mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-scientific flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-inter font-semibold text-text-primary">BioPortfolio</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home_landing_page.html" class="text-text-secondary hover:text-primary transition-micro">Home</a>
+                    <a href="projects_gallery.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Projects</a>
+                    <a href="about_professional_bio.html" class="text-text-secondary hover:text-primary transition-micro">About</a>
+                    <a href="skills_expertise.html" class="text-text-secondary hover:text-primary transition-micro">Skills</a>
+                    <a href="contact_collaboration.html" class="text-text-secondary hover:text-primary transition-micro">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 pb-4 border-t border-border hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="home_landing_page.html" class="text-text-secondary">Home</a>
+                    <a href="projects_gallery.html" class="text-primary font-semibold">Projects</a>
+                    <a href="about_professional_bio.html" class="text-text-secondary">About</a>
+                    <a href="skills_expertise.html" class="text-text-secondary">Skills</a>
+                    <a href="contact_collaboration.html" class="text-text-secondary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="bg-surface border-b border-border sticky top-16 z-sticky">
+        <div class="max-w-scientific mx-auto px-6 py-3">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="home_landing_page.html" class="text-text-secondary hover:text-primary transition-micro">Home</a>
+                <svg class="w-4 h-4 text-text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <a href="projects_gallery.html" class="text-text-secondary hover:text-primary transition-micro">Projects</a>
+                <svg class="w-4 h-4 text-text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-primary font-semibold">Cancer Genomics Analysis Pipeline</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Project Hero Section -->
+    <section class="py-12 bg-analytical">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Main Content -->
+                <div class="lg:col-span-2">
+                    <!-- Project Visualization -->
+                    <div class="aspect-video bg-surface rounded-scientific mb-6 overflow-hidden shadow-scientific-md">
+                        <img src="https://images.pixabay.com/photo/2020/07/08/04/12/dna-5382295_1280.jpg" alt="Cancer Genomics Analysis Pipeline Visualization" class="w-full h-full object-cover" onerror="this.src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=800&auto=format&fit=crop'; this.onerror=null;" />
+                    </div>
+                    
+                    <!-- Project Title & Overview -->
+                    <div class="mb-8">
+                        <h1 class="text-4xl md:text-5xl font-inter font-bold text-text-primary mb-4">
+                            Cancer Genomics Analysis Pipeline
+                        </h1>
+                        <p class="text-xl text-text-secondary mb-6">
+                            Automated pipeline for analyzing whole-genome sequencing data to identify 
+                            cancer-associated mutations and biomarkers using advanced computational methods.
+                        </p>
+                        
+                        <!-- Technology Stack -->
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-primary-100 text-primary-800 text-sm rounded-full font-semibold">Python</span>
+                            <span class="px-3 py-1 bg-secondary-100 text-secondary-800 text-sm rounded-full font-semibold">R</span>
+                            <span class="px-3 py-1 bg-accent-100 text-accent-800 text-sm rounded-full font-semibold">Bioconductor</span>
+                            <span class="px-3 py-1 bg-success-100 text-success-600 text-sm rounded-full font-semibold">GATK</span>
+                            <span class="px-3 py-1 bg-warning-100 text-warning-600 text-sm rounded-full font-semibold">Docker</span>
+                        </div>
+                        
+                        <!-- Project Status -->
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center space-x-2">
+                                <div class="w-3 h-3 bg-success rounded-full"></div>
+                                <span class="text-sm text-text-secondary">Completed</span>
+                            </div>
+                            <div class="text-sm text-text-secondary">
+                                Duration: 8 months
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Metadata Sidebar -->
+                <div class="lg:col-span-1">
+                    <div class="card-scientific p-6 sticky top-32">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Project Details</h3>
+                        
+                        <!-- Metadata Items -->
+                        <div class="space-y-4">
+                            <div>
+                                <h4 class="text-sm font-semibold text-text-primary mb-1">Timeline</h4>
+                                <p class="text-sm text-text-secondary">January 2024 - August 2024</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-semibold text-text-primary mb-1">Team Size</h4>
+                                <p class="text-sm text-text-secondary">4 researchers</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-semibold text-text-primary mb-1">Institution</h4>
+                                <p class="text-sm text-text-secondary">Stanford Medicine</p>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-sm font-semibold text-text-primary mb-1">Skills Demonstrated</h4>
+                                <div class="flex flex-wrap gap-1 mt-2">
+                                    <span class="px-2 py-1 bg-primary-50 text-primary-700 text-xs rounded">Genomics</span>
+                                    <span class="px-2 py-1 bg-secondary-50 text-secondary-700 text-xs rounded">Pipeline Development</span>
+                                    <span class="px-2 py-1 bg-accent-50 text-accent-700 text-xs rounded">Statistical Analysis</span>
+                                    <span class="px-2 py-1 bg-success-50 text-success-700 text-xs rounded">Data Visualization</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Action Buttons -->
+                        <div class="mt-6 space-y-3">
+                            <button class="btn-scientific bg-primary text-white hover:bg-primary-700 w-full" onclick="downloadProjectSummary()">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                                Download Summary
+                            </button>
+                            <button class="btn-scientific bg-secondary text-white hover:bg-secondary-800 w-full" onclick="viewGitHubRepo()">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                </svg>
+                                View Code
+                            </button>
+                        </div>
+                        
+                        <!-- Social Sharing -->
+                        <div class="mt-6 pt-6 border-t border-border">
+                            <h4 class="text-sm font-semibold text-text-primary mb-3">Share Project</h4>
+                            <div class="flex space-x-2">
+                                <button class="p-2 bg-primary-50 text-primary hover:bg-primary-100 rounded-scientific transition-micro" onclick="shareProject('linkedin')">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                                <button class="p-2 bg-secondary-50 text-secondary hover:bg-secondary-100 rounded-scientific transition-micro" onclick="shareProject('twitter')">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"/>
+                                    </svg>
+                                </button>
+                                <button class="p-2 bg-accent-50 text-accent hover:bg-accent-100 rounded-scientific transition-micro" onclick="copyProjectLink()">
+                                    <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clip-rule="evenodd"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Primary Content Column -->
+                <div class="lg:col-span-2 space-y-12">
+                    <!-- Executive Summary -->
+                    <div class="card-scientific p-8">
+                        <h2 class="text-2xl font-inter font-bold text-text-primary mb-4">Executive Summary</h2>
+                        <p class="text-text-secondary mb-4">
+                            This project developed a comprehensive automated pipeline for analyzing whole-genome sequencing (WGS) data 
+                            from cancer patients to identify somatic mutations, copy number variations, and potential therapeutic targets. 
+                            The pipeline processes raw FASTQ files through quality control, alignment, variant calling, and annotation 
+                            stages, ultimately producing clinically relevant insights for precision oncology.
+                        </p>
+                        <p class="text-text-secondary">
+                            Key achievements include a 40% reduction in analysis time, identification of novel mutation signatures 
+                            in 15% of samples, and successful validation of 23 potential biomarkers for targeted therapy selection.
+                        </p>
+                    </div>
+
+                    <!-- Problem Statement -->
+                    <div class="card-scientific p-8">
+                        <h2 class="text-2xl font-inter font-bold text-text-primary mb-4">Problem Statement</h2>
+                        <div class="space-y-4 text-text-secondary">
+                            <p>
+                                Cancer genomics research faces significant challenges in processing and interpreting large-scale 
+                                sequencing data efficiently. Traditional manual analysis approaches are time-intensive, 
+                                error-prone, and lack standardization across research teams.
+                            </p>
+                            <div class="bg-accent-50 border-l-4 border-accent p-4 rounded-scientific">
+                                <h3 class="font-semibold text-accent mb-2">Key Challenges Addressed:</h3>
+                                <ul class="list-disc list-inside space-y-1 text-sm">
+                                    <li>Manual analysis taking 2-3 weeks per sample</li>
+                                    <li>Inconsistent variant calling across different analysts</li>
+                                    <li>Limited integration of multi-omics data sources</li>
+                                    <li>Difficulty in identifying actionable mutations</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Methodology Section -->
+                    <div class="card-scientific p-8">
+                        <h2 class="text-2xl font-inter font-bold text-text-primary mb-6">Methodology</h2>
+                        
+                        <!-- Methodology Steps -->
+                        <div class="space-y-6">
+                            <!-- Step 1 -->
+                            <div class="methodology-step" data-step="1">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">1</div>
+                                    <div class="flex-1">
+                                        <button class="methodology-toggle w-full text-left" onclick="toggleMethodologyStep(1)">
+                                            <div class="flex items-center justify-between">
+                                                <h3 class="text-lg font-semibold text-text-primary">Data Preprocessing & Quality Control</h3>
+                                                <svg class="w-5 h-5 text-text-secondary transform transition-transform" id="arrow-1">
+                                                    <path fill="currentColor" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <div class="methodology-content hidden mt-4" id="content-1">
+                                            <div class="bg-primary-50 p-4 rounded-scientific">
+                                                <p class="text-text-secondary mb-3">
+                                                    Raw FASTQ files underwent comprehensive quality assessment using FastQC and MultiQC, 
+                                                    followed by adapter trimming and low-quality base removal using Trimmomatic.
+                                                </p>
+                                                <div class="grid grid-cols-2 gap-4 text-sm">
+                                                    <div>
+                                                        <h4 class="font-semibold text-primary mb-1">Tools Used:</h4>
+                                                        <ul class="list-disc list-inside text-text-secondary">
+                                                            <li>FastQC v0.11.9</li>
+                                                            <li>Trimmomatic v0.39</li>
+                                                            <li>MultiQC v1.12</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div>
+                                                        <h4 class="font-semibold text-primary mb-1">Quality Metrics:</h4>
+                                                        <ul class="list-disc list-inside text-text-secondary">
+                                                            <li>Phred score > 30</li>
+                                                            <li>Adapter contamination < 1%</li>
+                                                            <li>GC content 40-60%</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2 -->
+                            <div class="methodology-step" data-step="2">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center text-white font-semibold text-sm">2</div>
+                                    <div class="flex-1">
+                                        <button class="methodology-toggle w-full text-left" onclick="toggleMethodologyStep(2)">
+                                            <div class="flex items-center justify-between">
+                                                <h3 class="text-lg font-semibold text-text-primary">Sequence Alignment & Processing</h3>
+                                                <svg class="w-5 h-5 text-text-secondary transform transition-transform" id="arrow-2">
+                                                    <path fill="currentColor" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <div class="methodology-content hidden mt-4" id="content-2">
+                                            <div class="bg-secondary-50 p-4 rounded-scientific">
+                                                <p class="text-text-secondary mb-3">
+                                                    Cleaned reads were aligned to the human reference genome (GRCh38) using BWA-MEM, 
+                                                    followed by duplicate marking and base quality score recalibration using GATK best practices.
+                                                </p>
+                                                <div class="font-data text-sm bg-surface p-3 rounded border">
+                                                    <code class="text-primary">
+                                                        bwa mem -t 16 -R "@RG\tID:sample\tSM:sample" \<br />
+                                                        &nbsp;&nbsp;reference.fa sample_R1.fastq sample_R2.fastq | \<br />
+                                                        samtools sort -@ 8 -o sample.sorted.bam
+                                                    </code>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Step 3 -->
+                            <div class="methodology-step" data-step="3">
+                                <div class="flex items-start space-x-4">
+                                    <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-semibold text-sm">3</div>
+                                    <div class="flex-1">
+                                        <button class="methodology-toggle w-full text-left" onclick="toggleMethodologyStep(3)">
+                                            <div class="flex items-center justify-between">
+                                                <h3 class="text-lg font-semibold text-text-primary">Variant Calling & Annotation</h3>
+                                                <svg class="w-5 h-5 text-text-secondary transform transition-transform" id="arrow-3">
+                                                    <path fill="currentColor" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                        <div class="methodology-content hidden mt-4" id="content-3">
+                                            <div class="bg-accent-50 p-4 rounded-scientific">
+                                                <p class="text-text-secondary mb-3">
+                                                    Somatic variants were called using GATK Mutect2 for SNVs/indels and GATK CNV for copy number variations. 
+                                                    Variants were annotated using ANNOVAR with multiple databases including ClinVar, COSMIC, and dbSNP.
+                                                </p>
+                                                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                    <div class="bg-surface p-3 rounded border">
+                                                        <h4 class="font-semibold text-accent mb-2">Variant Filters Applied:</h4>
+                                                        <ul class="text-sm text-text-secondary space-y-1">
+                                                            <li>• Minimum depth: 10x</li>
+                                                            <li>• Variant allele frequency: >5%</li>
+                                                            <li>• Strand bias filter</li>
+                                                            <li>• Population frequency <1%</li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="bg-surface p-3 rounded border">
+                                                        <h4 class="font-semibold text-accent mb-2">Annotation Databases:</h4>
+                                                        <ul class="text-sm text-text-secondary space-y-1">
+                                                            <li>• ClinVar (clinical significance)</li>
+                                                            <li>• COSMIC (cancer mutations)</li>
+                                                            <li>• gnomAD (population frequencies)</li>
+                                                            <li>• OncoKB (therapeutic implications)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Data Visualizations -->
+                    <div class="card-scientific p-8">
+                        <h2 class="text-2xl font-inter font-bold text-text-primary mb-6">Data Visualizations</h2>
+                        
+                        <!-- Visualization Tabs -->
+                        <div class="border-b border-border mb-6">
+                            <nav class="flex space-x-8">
+                                <button class="visualization-tab active py-2 px-1 border-b-2 border-primary text-primary font-semibold" data-tab="mutations">
+                                    Mutation Landscape
+                                </button>
+                                <button class="visualization-tab py-2 px-1 border-b-2 border-transparent text-text-secondary hover:text-primary" data-tab="survival">
+                                    Survival Analysis
+                                </button>
+                                <button class="visualization-tab py-2 px-1 border-b-2 border-transparent text-text-secondary hover:text-primary" data-tab="pathways">
+                                    Pathway Analysis
+                                </button>
+                            </nav>
+                        </div>
+                        
+                        <!-- Visualization Content -->
+                        <div class="visualization-content">
+                            <!-- Mutations Tab -->
+                            <div id="mutations-content" class="visualization-panel">
+                                <div class="bg-primary-50 p-6 rounded-scientific">
+                                    <div class="aspect-video bg-surface rounded border mb-4 flex items-center justify-center">
+                                        <div class="text-center">
+                                            <svg class="w-16 h-16 text-primary mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                            </svg>
+                                            <p class="text-text-secondary">Interactive mutation landscape visualization</p>
+                                            <p class="text-sm text-text-secondary mt-1">Click to explore mutation patterns across samples</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-3 gap-4 text-center">
+                                        <div>
+                                            <div class="text-2xl font-bold text-primary">1,247</div>
+                                            <div class="text-sm text-text-secondary">Total Mutations</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-2xl font-bold text-secondary">89</div>
+                                            <div class="text-sm text-text-secondary">Driver Mutations</div>
+                                        </div>
+                                        <div>
+                                            <div class="text-2xl font-bold text-accent">23</div>
+                                            <div class="text-sm text-text-secondary">Actionable Targets</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Survival Tab -->
+                            <div id="survival-content" class="visualization-panel hidden">
+                                <div class="bg-secondary-50 p-6 rounded-scientific">
+                                    <div class="aspect-video bg-surface rounded border mb-4 flex items-center justify-center">
+                                        <div class="text-center">
+                                            <svg class="w-16 h-16 text-secondary mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"/>
+                                                <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"/>
+                                            </svg>
+                                            <p class="text-text-secondary">Kaplan-Meier survival curves</p>
+                                            <p class="text-sm text-text-secondary mt-1">Stratified by mutation status</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-sm text-text-secondary">
+                                        <p class="mb-2"><strong>Key Findings:</strong></p>
+                                        <ul class="list-disc list-inside space-y-1">
+                                            <li>Patients with TP53 mutations showed significantly reduced overall survival (p < 0.001)</li>
+                                            <li>EGFR mutation carriers had improved response to targeted therapy</li>
+                                            <li>Median survival: 24.3 months (wild-type) vs 18.7 months (mutated)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Pathways Tab -->
+                            <div id="pathways-content" class="visualization-panel hidden">
+                                <div class="bg-accent-50 p-6 rounded-scientific">
+                                    <div class="aspect-video bg-surface rounded border mb-4 flex items-center justify-center">
+                                        <div class="text-center">
+                                            <svg class="w-16 h-16 text-accent mx-auto mb-2" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M5 3a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2V5a2 2 0 00-2-2H5zm0 2h10v7h-2l-1-2H9l-1 2H6V5z" clip-rule="evenodd"/>
+                                            </svg>
+                                            <p class="text-text-secondary">Pathway enrichment analysis</p>
+                                            <p class="text-sm text-text-secondary mt-1">KEGG and Reactome pathway visualization</p>
+                                        </div>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-4 text-sm">
+                                        <div>
+                                            <h4 class="font-semibold text-accent mb-2">Top Enriched Pathways:</h4>
+                                            <ul class="space-y-1 text-text-secondary">
+                                                <li>• PI3K-Akt signaling (p = 2.3e-8)</li>
+                                                <li>• p53 signaling pathway (p = 1.7e-6)</li>
+                                                <li>• Cell cycle regulation (p = 4.2e-5)</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-accent mb-2">Therapeutic Targets:</h4>
+                                            <ul class="space-y-1 text-text-secondary">
+                                                <li>• mTOR inhibitors</li>
+                                                <li>• CDK4/6 inhibitors</li>
+                                                <li>• PARP inhibitors</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results & Analysis -->
+                    <div class="card-scientific p-8">
+                        <h2 class="text-2xl font-inter font-bold text-text-primary mb-6">Results & Analysis</h2>
+                        
+                        <!-- Key Results Grid -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="bg-success-50 p-6 rounded-scientific">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 bg-success rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-lg font-semibold text-success-600">Performance Improvement</h3>
+                                </div>
+                                <p class="text-text-secondary mb-2">
+                                    Achieved 40% reduction in analysis time compared to manual processing, 
+                                    from 3 weeks to 1.8 weeks per sample.
+                                </p>
+                                <div class="text-2xl font-bold text-success-600">40% faster</div>
+                            </div>
+                            
+                            <div class="bg-primary-50 p-6 rounded-scientific">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-lg font-semibold text-primary">Novel Discoveries</h3>
+                                </div>
+                                <p class="text-text-secondary mb-2">
+                                    Identified novel mutation signatures in 15% of analyzed samples, 
+                                    contributing to new therapeutic hypotheses.
+                                </p>
+                                <div class="text-2xl font-bold text-primary">15% novel findings</div>
+                            </div>
+                            
+                            <div class="bg-secondary-50 p-6 rounded-scientific">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-lg font-semibold text-secondary">Biomarker Validation</h3>
+                                </div>
+                                <p class="text-text-secondary mb-2">
+                                    Successfully validated 23 potential biomarkers for targeted therapy selection 
+                                    with clinical significance.
+                                </p>
+                                <div class="text-2xl font-bold text-secondary">23 biomarkers</div>
+                            </div>
+                            
+                            <div class="bg-warning-50 p-6 rounded-scientific">
+                                <div class="flex items-center mb-3">
+                                    <div class="w-8 h-8 bg-warning rounded-full flex items-center justify-center mr-3">
+                                        <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-lg font-semibold text-warning-600">Data Processing</h3>
+                                </div>
+                                <p class="text-text-secondary mb-2">
+                                    Processed over 2.5TB of genomic data from 150 cancer samples 
+                                    with 99.7% accuracy rate.
+                                </p>
+                                <div class="text-2xl font-bold text-warning-600">2.5TB processed</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Statistical Summary -->
+                        <div class="bg-analytical p-6 rounded-scientific">
+                            <h3 class="text-lg font-semibold text-text-primary mb-4">Statistical Summary</h3>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                                <div>
+                                    <div class="text-2xl font-bold text-primary">150</div>
+                                    <div class="text-sm text-text-secondary">Samples Analyzed</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold text-secondary">99.7%</div>
+                                    <div class="text-sm text-text-secondary">Accuracy Rate</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold text-accent">1,247</div>
+                                    <div class="text-sm text-text-secondary">Variants Identified</div>
+                                </div>
+                                <div>
+                                    <div class="text-2xl font-bold text-success">89</div>
+                                    <div class="text-sm text-text-secondary">Driver Mutations</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conclusions -->
+                    <div class="card-scientific p-8">
+                        <h2 class="text-2xl font-inter font-bold text-text-primary mb-6">Conclusions & Impact</h2>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary mb-3">Key Achievements</h3>
+                                <ul class="space-y-2 text-text-secondary">
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-success mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Developed a robust, scalable pipeline that reduced analysis time by 40% while maintaining high accuracy
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-success mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Identified novel mutation signatures that contributed to new therapeutic hypotheses
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-success mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Validated 23 potential biomarkers for precision oncology applications
+                                    </li>
+                                    <li class="flex items-start">
+                                        <svg class="w-5 h-5 text-success mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Established standardized protocols for multi-institutional collaboration
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h3 class="text-lg font-semibold text-text-primary mb-3">Clinical Impact</h3>
+                                <p class="text-text-secondary mb-4">
+                                    The pipeline has been adopted by three major cancer research centers and has directly 
+                                    contributed to treatment decisions for over 200 patients. The standardized approach 
+                                    has improved consistency in variant interpretation and reduced time-to-treatment decisions.
+                                </p>
+                                
+                                <div class="bg-primary-50 border-l-4 border-primary p-4 rounded-scientific">
+                                    <h4 class="font-semibold text-primary mb-2">Future Directions</h4>
+                                    <ul class="text-sm text-text-secondary space-y-1">
+                                        <li>• Integration of RNA-seq data for comprehensive multi-omics analysis</li>
+                                        <li>• Implementation of machine learning models for mutation effect prediction</li>
+                                        <li>• Development of real-time analysis capabilities for clinical applications</li>
+                                        <li>• Expansion to include liquid biopsy and circulating tumor DNA analysis</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Content Column -->
+                <div class="lg:col-span-1">
+                    <!-- Related Projects -->
+                    <div class="card-scientific p-6 mb-8">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Related Projects</h3>
+                        <div class="space-y-4">
+                            <a href="project_detail_case_study.html" class="block group">
+                                <div class="aspect-video bg-secondary-50 rounded-scientific mb-2 overflow-hidden">
+                                    <img src="https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Protein-Drug Interaction Predictor" class="w-full h-full object-cover group-hover:scale-105 transition-smooth" onerror="this.src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=400&auto=format&fit=crop'; this.onerror=null;" />
+                                </div>
+                                <h4 class="font-semibold text-text-primary group-hover:text-primary transition-micro">
+                                    Protein-Drug Interaction Predictor
+                                </h4>
+                                <p class="text-sm text-text-secondary">Machine learning model for drug discovery</p>
+                            </a>
+                            
+                            <a href="project_detail_case_study.html" class="block group">
+                                <div class="aspect-video bg-accent-50 rounded-scientific mb-2 overflow-hidden">
+                                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=400&auto=format&fit=crop" alt="Systems Biology Network Analysis" class="w-full h-full object-cover group-hover:scale-105 transition-smooth" onerror="this.src='https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=400'; this.onerror=null;" />
+                                </div>
+                                <h4 class="font-semibold text-text-primary group-hover:text-primary transition-micro">
+                                    Systems Biology Network Analysis
+                                </h4>
+                                <p class="text-sm text-text-secondary">Gene regulatory network analysis</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Download Resources -->
+                    <div class="card-scientific p-6 mb-8">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Download Resources</h3>
+                        <div class="space-y-3">
+                            <button class="w-full btn-scientific bg-primary text-white hover:bg-primary-700 text-left" onclick="downloadResource('summary')">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <div>
+                                        <div class="font-semibold">Project Summary PDF</div>
+                                        <div class="text-xs opacity-75">Comprehensive overview (2.3 MB)</div>
+                                    </div>
+                                </div>
+                            </button>
+                            
+                            <button class="w-full btn-scientific bg-secondary text-white hover:bg-secondary-800 text-left" onclick="downloadResource('slides')">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <div>
+                                        <div class="font-semibold">Presentation Slides</div>
+                                        <div class="text-xs opacity-75">Conference presentation (5.1 MB)</div>
+                                    </div>
+                                </div>
+                            </button>
+                            
+                            <button class="w-full btn-scientific bg-accent text-white hover:bg-accent-700 text-left" onclick="downloadResource('dataset')">
+                                <div class="flex items-center">
+                                    <svg class="w-4 h-4 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                        <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/>
+                                    </svg>
+                                    <div>
+                                        <div class="font-semibold">Sample Dataset</div>
+                                        <div class="text-xs opacity-75">Anonymized data (12.7 MB)</div>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Contact for Inquiries -->
+                    <div class="card-scientific p-6">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Project Inquiries</h3>
+                        <p class="text-text-secondary text-sm mb-4">
+                            Interested in learning more about this project or potential collaboration opportunities?
+                        </p>
+                        <form class="space-y-4" onsubmit="submitInquiry(event)">
+                            <div>
+                                <input type="text" placeholder="Your Name" class="input-scientific w-full" required />
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Email Address" class="input-scientific w-full" required />
+                            </div>
+                            <div>
+                                <textarea placeholder="Your inquiry about this project..." rows="3" class="input-scientific w-full resize-none" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-scientific bg-primary text-white hover:bg-primary-700 w-full">
+                                Send Inquiry
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Navigation -->
+    <section class="py-8 bg-surface border-t border-border">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="flex items-center justify-between">
+                <a href="projects_gallery.html" class="flex items-center text-text-secondary hover:text-primary transition-micro">
+                    <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                    Back to Projects
+                </a>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="flex items-center text-text-secondary hover:text-primary transition-micro" onclick="navigateProject('prev')">
+                        <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                        </svg>
+                        Previous Project
+                    </button>
+                    <button class="flex items-center text-text-secondary hover:text-primary transition-micro" onclick="navigateProject('next')">
+                        Next Project
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-scientific flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <span class="text-lg font-inter font-semibold">BioPortfolio</span>
+                    </div>
+                    <p class="text-gray-300 text-sm">
+                        Advancing scientific discovery through computational biology and bioinformatics expertise.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="projects_gallery.html" class="block text-gray-300 hover:text-white transition-micro">Projects</a>
+                        <a href="about_professional_bio.html" class="block text-gray-300 hover:text-white transition-micro">About</a>
+                        <a href="skills_expertise.html" class="block text-gray-300 hover:text-white transition-micro">Skills</a>
+                        <a href="contact_collaboration.html" class="block text-gray-300 hover:text-white transition-micro">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold mb-4">Connect</h3>
+                    <div class="space-y-2 text-gray-300 text-sm">
+                        <p>sarah.chen@bioportfolio.com</p>
+                        <p>LinkedIn: /in/sarahchen-bio</p>
+                        <p>ORCID: 0000-0002-1234-5678</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300 text-sm">
+                <p>© 2025 BioPortfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Methodology step toggles
+        function toggleMethodologyStep(stepNumber) {
+            const content = document.getElementById(`content-${stepNumber}`);
+            const arrow = document.getElementById(`arrow-${stepNumber}`);
+            
+            content.classList.toggle('hidden');
+            arrow.classList.toggle('rotate-180');
+        }
+
+        // Visualization tabs
+        document.querySelectorAll('.visualization-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const targetTab = this.dataset.tab;
+                
+                // Update active tab
+                document.querySelectorAll('.visualization-tab').forEach(t => {
+                    t.classList.remove('active', 'border-primary', 'text-primary');
+                    t.classList.add('border-transparent', 'text-text-secondary');
+                });
+                this.classList.add('active', 'border-primary', 'text-primary');
+                this.classList.remove('border-transparent', 'text-text-secondary');
+                
+                // Show corresponding content
+                document.querySelectorAll('.visualization-panel').forEach(panel => {
+                    panel.classList.add('hidden');
+                });
+                document.getElementById(`${targetTab}-content`).classList.remove('hidden');
+            });
+        });
+
+        // Download functions
+        function downloadProjectSummary() {
+            // Simulate download
+            alert('Downloading project summary PDF...');
+        }
+
+        function viewGitHubRepo() {
+            // Simulate GitHub redirect
+            alert('Redirecting to GitHub repository...');
+        }
+
+        function downloadResource(type) {
+            const resources = {
+                'summary': 'Project Summary PDF',
+                'slides': 'Presentation Slides',
+                'dataset': 'Sample Dataset'
+            };
+            alert(`Downloading ${resources[type]}...`);
+        }
+
+        // Social sharing functions
+        function shareProject(platform) {
+            const platforms = {
+                'linkedin': 'LinkedIn',
+                'twitter': 'Twitter'
+            };
+            alert(`Sharing project on ${platforms[platform]}...`);
+        }
+
+        function copyProjectLink() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('Project link copied to clipboard!');
+            });
+        }
+
+        // Project navigation
+        function navigateProject(direction) {
+            const projects = ['cancer-genomics', 'protein-drug-interaction', 'systems-biology'];
+            const currentProject = 'cancer-genomics'; // This would be dynamic
+            const currentIndex = projects.indexOf(currentProject);
+            
+            let nextIndex;
+            if (direction === 'next') {
+                nextIndex = (currentIndex + 1) % projects.length;
+            } else {
+                nextIndex = (currentIndex - 1 + projects.length) % projects.length;
+            }
+            
+            // In a real application, this would navigate to the actual project
+            alert(`Navigating to ${direction} project: ${projects[nextIndex]}`);
+        }
+
+        // Inquiry form submission
+        function submitInquiry(event) {
+            event.preventDefault();
+            alert('Thank you for your inquiry! I will get back to you soon.');
+            event.target.reset();
+        }
+
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Progress indicator for reading
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            
+            // Update progress bar if it exists
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                progressBar.style.width = scrolled + '%';
+            }
+        });
+
+        // Lazy loading for images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

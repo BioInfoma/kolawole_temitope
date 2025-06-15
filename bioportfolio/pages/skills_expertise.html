@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills & Expertise - BioPortfolio</title>
+    <meta name="description" content="Technical competencies and domain expertise in bioinformatics, computational biology, and data analysis." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fbioportfol3755back.builtwithrocket.new&_v=0.1.2"></script>
+</head>
+<body class="bg-background font-body">
+    <!-- Navigation Header -->
+    <nav class="bg-surface shadow-scientific-sm sticky top-0 z-fixed">
+        <div class="max-w-scientific mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-scientific flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <span class="text-xl font-inter font-semibold text-text-primary">BioPortfolio</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="home_landing_page.html" class="text-text-secondary hover:text-primary transition-micro">Home</a>
+                    <a href="projects_gallery.html" class="text-text-secondary hover:text-primary transition-micro">Projects</a>
+                    <a href="about_professional_bio.html" class="text-text-secondary hover:text-primary transition-micro">About</a>
+                    <a href="skills_expertise.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Skills</a>
+                    <a href="contact_collaboration.html" class="text-text-secondary hover:text-primary transition-micro">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" id="mobile-menu-btn">
+                    <svg class="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div class="md:hidden mt-4 pb-4 border-t border-border hidden" id="mobile-menu">
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="home_landing_page.html" class="text-text-secondary">Home</a>
+                    <a href="projects_gallery.html" class="text-text-secondary">Projects</a>
+                    <a href="about_professional_bio.html" class="text-text-secondary">About</a>
+                    <a href="skills_expertise.html" class="text-primary font-semibold">Skills</a>
+                    <a href="contact_collaboration.html" class="text-text-secondary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="bg-surface border-b border-border">
+        <div class="max-w-scientific mx-auto px-6 py-3">
+            <nav class="flex items-center space-x-2 text-sm">
+                <a href="home_landing_page.html" class="text-text-secondary hover:text-primary transition-micro">Home</a>
+                <svg class="w-4 h-4 text-text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-primary font-semibold">Skills</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="bg-analytical py-12">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-inter font-bold text-text-primary mb-4">
+                    Skills & Expertise
+                </h1>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto mb-8">
+                    Comprehensive technical competencies and domain expertise in computational biology, 
+                    bioinformatics, and data analysis developed through 8+ years of research and industry experience.
+                </p>
+                
+                <!-- Quick Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-primary">25+</div>
+                        <div class="text-sm text-text-secondary">Technologies</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-secondary">12</div>
+                        <div class="text-sm text-text-secondary">Certifications</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-accent">8+</div>
+                        <div class="text-sm text-text-secondary">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-success">15</div>
+                        <div class="text-sm text-text-secondary">Active Projects</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Filter -->
+    <section class="py-8 bg-surface border-b border-border">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex flex-wrap gap-2">
+                    <button class="px-4 py-2 bg-primary text-white rounded-scientific text-sm font-semibold" data-filter="all">
+                        All Skills
+                    </button>
+                    <button class="px-4 py-2 bg-border text-text-secondary rounded-scientific text-sm hover:bg-primary hover:text-white transition-micro" data-filter="programming">
+                        Programming
+                    </button>
+                    <button class="px-4 py-2 bg-border text-text-secondary rounded-scientific text-sm hover:bg-primary hover:text-white transition-micro" data-filter="bioinformatics">
+                        Bioinformatics
+                    </button>
+                    <button class="px-4 py-2 bg-border text-text-secondary rounded-scientific text-sm hover:bg-primary hover:text-white transition-micro" data-filter="statistics">
+                        Statistics
+                    </button>
+                    <button class="px-4 py-2 bg-border text-text-secondary rounded-scientific text-sm hover:bg-primary hover:text-white transition-micro" data-filter="databases">
+                        Databases
+                    </button>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <label class="text-sm text-text-secondary">Proficiency Level:</label>
+                    <select class="input-scientific text-sm" id="proficiency-filter">
+                        <option value="all">All Levels</option>
+                        <option value="expert">Expert</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="beginner">Beginner</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Dashboard -->
+    <section class="py-16">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Main Skills Content -->
+                <div class="lg:col-span-2">
+                    <!-- Programming Languages -->
+                    <div class="card-scientific p-6 mb-8" data-category="programming">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-2xl font-inter font-bold text-text-primary flex items-center">
+                                <div class="w-8 h-8 bg-primary-100 rounded-scientific flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0L19.2 12l-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                                    </svg>
+                                </div>
+                                Programming Languages
+                            </h2>
+                            <button class="text-primary hover:text-primary-700 transition-micro" onclick="toggleSection('programming')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="programming-content">
+                            <!-- Python -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="expert">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Python" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.unsplash.com/photo-1526379095098-d400fd0bf935?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">Python</h3>
+                                            <span class="text-xs text-success bg-success-50 px-2 py-1 rounded-full">Expert</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">8 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>95%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-success h-2 rounded-full" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    Advanced data analysis, machine learning, bioinformatics pipelines, web scraping, automation
+                                </p>
+                                <div class="flex flex-wrap gap-1">
+                                    <a href="projects_gallery.html?filter=python" class="text-xs bg-primary-50 text-primary px-2 py-1 rounded hover:bg-primary-100 transition-micro">
+                                        View Projects
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- R -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="expert">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.pixabay.com/photo/2017/08/05/11/16/logo-2582748_1280.png" alt="R Programming" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">R</h3>
+                                            <span class="text-xs text-success bg-success-50 px-2 py-1 rounded-full">Expert</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">7 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>92%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-success h-2 rounded-full" style="width: 92%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    Statistical analysis, Bioconductor packages, data visualization, genomics analysis
+                                </p>
+                                <div class="flex flex-wrap gap-1">
+                                    <a href="projects_gallery.html?filter=r" class="text-xs bg-primary-50 text-primary px-2 py-1 rounded hover:bg-primary-100 transition-micro">
+                                        View Projects
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- SQL -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="advanced">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=100&auto=format&fit=crop" alt="SQL" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">SQL</h3>
+                                            <span class="text-xs text-secondary bg-secondary-50 px-2 py-1 rounded-full">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">6 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-secondary h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    Complex queries, database optimization, biological database management
+                                </p>
+                                <div class="flex flex-wrap gap-1">
+                                    <a href="projects_gallery.html?filter=sql" class="text-xs bg-primary-50 text-primary px-2 py-1 rounded hover:bg-primary-100 transition-micro">
+                                        View Projects
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- JavaScript -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="intermediate">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=100" alt="JavaScript" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">JavaScript</h3>
+                                            <span class="text-xs text-warning bg-warning-50 px-2 py-1 rounded-full">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">4 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-warning h-2 rounded-full" style="width: 70%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    Interactive visualizations, web applications, D3.js for scientific data
+                                </p>
+                                <div class="flex flex-wrap gap-1">
+                                    <a href="projects_gallery.html?filter=javascript" class="text-xs bg-primary-50 text-primary px-2 py-1 rounded hover:bg-primary-100 transition-micro">
+                                        View Projects
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bioinformatics Tools -->
+                    <div class="card-scientific p-6 mb-8" data-category="bioinformatics">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-2xl font-inter font-bold text-text-primary flex items-center">
+                                <div class="w-8 h-8 bg-secondary-100 rounded-scientific flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                Bioinformatics Tools
+                            </h2>
+                            <button class="text-primary hover:text-primary-700 transition-micro" onclick="toggleSection('bioinformatics')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="bioinformatics-content">
+                            <!-- BLAST -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="expert">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=100&auto=format&fit=crop" alt="BLAST" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">BLAST</h3>
+                                            <span class="text-xs text-success bg-success-50 px-2 py-1 rounded-full">Expert</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">8 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>95%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-success h-2 rounded-full" style="width: 95%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    Sequence alignment, homology searches, custom database creation
+                                </p>
+                            </div>
+
+                            <!-- Bioconductor -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="expert">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Bioconductor" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">Bioconductor</h3>
+                                            <span class="text-xs text-success bg-success-50 px-2 py-1 rounded-full">Expert</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">7 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-success h-2 rounded-full" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    Genomic analysis, RNA-seq, microarray analysis, pathway analysis
+                                </p>
+                            </div>
+
+                            <!-- Galaxy -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="advanced">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.pixabay.com/photo/2020/07/08/04/12/dna-5382295_1280.jpg" alt="Galaxy" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">Galaxy</h3>
+                                            <span class="text-xs text-secondary bg-secondary-50 px-2 py-1 rounded-full">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">5 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-secondary h-2 rounded-full" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    Workflow development, data integration, reproducible analysis
+                                </p>
+                            </div>
+
+                            <!-- Cytoscape -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="advanced">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?q=80&w=100&auto=format&fit=crop" alt="Cytoscape" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.pexels.com/photos/3825581/pexels-photo-3825581.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">Cytoscape</h3>
+                                            <span class="text-xs text-secondary bg-secondary-50 px-2 py-1 rounded-full">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">4 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-secondary h-2 rounded-full" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    Network analysis, protein interactions, pathway visualization
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Statistical Methods -->
+                    <div class="card-scientific p-6 mb-8" data-category="statistics">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-2xl font-inter font-bold text-text-primary flex items-center">
+                                <div class="w-8 h-8 bg-accent-100 rounded-scientific flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/>
+                                    </svg>
+                                </div>
+                                Statistical Methods
+                            </h2>
+                            <button class="text-primary hover:text-primary-700 transition-micro" onclick="toggleSection('statistics')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="statistics-content">
+                            <!-- Machine Learning -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="expert">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Machine Learning" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">Machine Learning</h3>
+                                            <span class="text-xs text-success bg-success-50 px-2 py-1 rounded-full">Expert</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">6 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>88%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-success h-2 rounded-full" style="width: 88%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    Supervised/unsupervised learning, feature selection, model validation
+                                </p>
+                            </div>
+
+                            <!-- Multivariate Analysis -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="advanced">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=100&auto=format&fit=crop" alt="Multivariate Analysis" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">Multivariate Analysis</h3>
+                                            <span class="text-xs text-secondary bg-secondary-50 px-2 py-1 rounded-full">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">7 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-secondary h-2 rounded-full" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    PCA, clustering, dimensionality reduction, ANOVA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Technologies -->
+                    <div class="card-scientific p-6 mb-8" data-category="databases">
+                        <div class="flex items-center justify-between mb-6">
+                            <h2 class="text-2xl font-inter font-bold text-text-primary flex items-center">
+                                <div class="w-8 h-8 bg-success-100 rounded-scientific flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4zM4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4zM4 16v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4z"/>
+                                    </svg>
+                                </div>
+                                Database Technologies
+                            </h2>
+                            <button class="text-primary hover:text-primary-700 transition-micro" onclick="toggleSection('databases')">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="databases-content">
+                            <!-- PostgreSQL -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="advanced">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=100&auto=format&fit=crop" alt="PostgreSQL" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">PostgreSQL</h3>
+                                            <span class="text-xs text-secondary bg-secondary-50 px-2 py-1 rounded-full">Advanced</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">5 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-secondary h-2 rounded-full" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    Complex queries, performance optimization, biological data storage
+                                </p>
+                            </div>
+
+                            <!-- MongoDB -->
+                            <div class="skill-item p-4 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth" data-proficiency="intermediate">
+                                <div class="flex items-center justify-between mb-3">
+                                    <div class="flex items-center">
+                                        <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=100" alt="MongoDB" class="w-8 h-8 rounded mr-3" onerror="this.src='https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                                        <div>
+                                            <h3 class="font-semibold text-text-primary">MongoDB</h3>
+                                            <span class="text-xs text-warning bg-warning-50 px-2 py-1 rounded-full">Intermediate</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-sm text-text-secondary">3 years</span>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="flex justify-between text-sm mb-1">
+                                        <span>Proficiency</span>
+                                        <span>65%</span>
+                                    </div>
+                                    <div class="w-full bg-border rounded-full h-2">
+                                        <div class="bg-warning h-2 rounded-full" style="width: 65%"></div>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-text-secondary mb-3">
+                                    NoSQL design, document storage, unstructured biological data
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="lg:col-span-1">
+                    <!-- Certifications -->
+                    <div class="card-scientific p-6 mb-6">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Certifications</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center p-3 bg-primary-50 rounded-scientific">
+                                <div class="w-10 h-10 bg-primary rounded-scientific flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm">AWS Certified</h4>
+                                    <p class="text-xs text-text-secondary">Cloud Practitioner</p>
+                                    <p class="text-xs text-success">Valid until 2026</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-3 bg-secondary-50 rounded-scientific">
+                                <div class="w-10 h-10 bg-secondary rounded-scientific flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm">Google Analytics</h4>
+                                    <p class="text-xs text-text-secondary">Individual Qualified</p>
+                                    <p class="text-xs text-success">Valid until 2025</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-3 bg-accent-50 rounded-scientific">
+                                <div class="w-10 h-10 bg-accent rounded-scientific flex items-center justify-center mr-3">
+                                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-sm">Coursera ML</h4>
+                                    <p class="text-xs text-text-secondary">Machine Learning</p>
+                                    <p class="text-xs text-success">Completed 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Learning Timeline -->
+                    <div class="card-scientific p-6 mb-6">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Learning Journey</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-3 h-3 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <div>
+                                    <h4 class="font-semibold text-sm">2024</h4>
+                                    <p class="text-xs text-text-secondary">Advanced Deep Learning, Cloud Computing</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-3 h-3 bg-secondary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <div>
+                                    <h4 class="font-semibold text-sm">2022-2023</h4>
+                                    <p class="text-xs text-text-secondary">Single-cell Analysis, Spatial Genomics</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-3 h-3 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <div>
+                                    <h4 class="font-semibold text-sm">2020-2021</h4>
+                                    <p class="text-xs text-text-secondary">Machine Learning, Statistical Modeling</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-3 h-3 bg-success rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                                <div>
+                                    <h4 class="font-semibold text-sm">2017-2019</h4>
+                                    <p class="text-xs text-text-secondary">Core Bioinformatics, Programming</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Related Projects -->
+                    <div class="card-scientific p-6">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Related Projects</h3>
+                        <div class="space-y-3">
+                            <a href="project_detail_case_study.html" class="block p-3 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth">
+                                <h4 class="font-semibold text-sm text-primary">Cancer Genomics Pipeline</h4>
+                                <p class="text-xs text-text-secondary">Python, R, Machine Learning</p>
+                            </a>
+                            <a href="project_detail_case_study.html" class="block p-3 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth">
+                                <h4 class="font-semibold text-sm text-primary">Protein Interaction Network</h4>
+                                <p class="text-xs text-text-secondary">Cytoscape, SQL, Statistics</p>
+                            </a>
+                            <a href="project_detail_case_study.html" class="block p-3 border border-border rounded-scientific hover:shadow-scientific-md transition-smooth">
+                                <h4 class="font-semibold text-sm text-primary">Drug Discovery Platform</h4>
+                                <p class="text-xs text-text-secondary">TensorFlow, Bioinformatics</p>
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <a href="projects_gallery.html" class="btn-scientific bg-primary text-white w-full text-center">
+                                View All Projects
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Endorsements Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                    Professional Endorsements
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Validation from colleagues and industry experts
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Endorsement 1 -->
+                <div class="card-scientific p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Dr. Emily Watson" class="w-12 h-12 rounded-full mr-3" onerror="this.src='https://images.unsplash.com/photo-1494790108755-2616b332c5c0?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Dr. Emily Watson</h4>
+                            <p class="text-sm text-text-secondary">Head of Computational Biology</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-text-secondary mb-3">
+                        "Sarah's expertise in Python and machine learning is exceptional. Her analytical skills 
+                        consistently deliver breakthrough insights."
+                    </p>
+                    <div class="flex items-center">
+                        <span class="text-xs bg-primary-50 text-primary px-2 py-1 rounded">Python</span>
+                        <span class="text-xs bg-secondary-50 text-secondary px-2 py-1 rounded ml-2">Machine Learning</span>
+                    </div>
+                </div>
+
+                <!-- Endorsement 2 -->
+                <div class="card-scientific p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.pixabay.com/photo/2016/11/21/12/42/beard-1845166_1280.jpg" alt="Dr. Michael Rodriguez" class="w-12 h-12 rounded-full mr-3" onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Dr. Michael Rodriguez</h4>
+                            <p class="text-sm text-text-secondary">Principal Investigator</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-text-secondary mb-3">
+                        "Outstanding proficiency in R and Bioconductor. Sarah's statistical analysis capabilities 
+                        are among the best I've encountered."
+                    </p>
+                    <div class="flex items-center">
+                        <span class="text-xs bg-primary-50 text-primary px-2 py-1 rounded">R</span>
+                        <span class="text-xs bg-secondary-50 text-secondary px-2 py-1 rounded ml-2">Statistics</span>
+                    </div>
+                </div>
+
+                <!-- Endorsement 3 -->
+                <div class="card-scientific p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Prof. James Liu" class="w-12 h-12 rounded-full mr-3" onerror="this.src='https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100'; this.onerror=null;" />
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Prof. James Liu</h4>
+                            <p class="text-sm text-text-secondary">Department Chair</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-text-secondary mb-3">
+                        "Sarah's database management and SQL skills are exemplary. She consistently optimizes 
+                        complex biological datasets with precision."
+                    </p>
+                    <div class="flex items-center">
+                        <span class="text-xs bg-primary-50 text-primary px-2 py-1 rounded">SQL</span>
+                        <span class="text-xs bg-secondary-50 text-secondary px-2 py-1 rounded ml-2">Databases</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-analytical">
+        <div class="max-w-scientific mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-inter font-bold text-text-primary mb-4">
+                Ready to Collaborate?
+            </h2>
+            <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                Let's discuss how my technical expertise can contribute to your bioinformatics projects and research goals.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact_collaboration.html" class="btn-scientific bg-primary text-white hover:bg-primary-700">
+                    Get In Touch
+                </a>
+                <a href="projects_gallery.html" class="btn-scientific bg-surface text-primary border border-primary hover:bg-primary-50">
+                    View My Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="max-w-scientific mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-scientific flex items-center justify-center">
+                            <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <span class="text-lg font-inter font-semibold">BioPortfolio</span>
+                    </div>
+                    <p class="text-gray-300 text-sm">
+                        Advancing scientific discovery through computational biology and bioinformatics expertise.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold mb-4">Quick Links</h3>
+                    <div class="space-y-2">
+                        <a href="projects_gallery.html" class="block text-gray-300 hover:text-white transition-micro">Projects</a>
+                        <a href="about_professional_bio.html" class="block text-gray-300 hover:text-white transition-micro">About</a>
+                        <a href="skills_expertise.html" class="block text-gray-300 hover:text-white transition-micro">Skills</a>
+                        <a href="contact_collaboration.html" class="block text-gray-300 hover:text-white transition-micro">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="font-semibold mb-4">Connect</h3>
+                    <div class="space-y-2 text-gray-300 text-sm">
+                        <p>sarah.chen@bioportfolio.com</p>
+                        <p>LinkedIn: /in/sarahchen-bio</p>
+                        <p>ORCID: 0000-0002-1234-5678</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300 text-sm">
+                <p>© 2025 BioPortfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Skills filtering
+        const filterButtons = document.querySelectorAll('[data-filter]');
+        const skillSections = document.querySelectorAll('[data-category]');
+        const skillItems = document.querySelectorAll('.skill-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.dataset.filter;
+                
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('bg-primary', 'text-white');
+                    btn.classList.add('bg-border', 'text-text-secondary');
+                });
+                button.classList.remove('bg-border', 'text-text-secondary');
+                button.classList.add('bg-primary', 'text-white');
+                
+                // Filter sections
+                if (filter === 'all') {
+                    skillSections.forEach(section => {
+                        section.style.display = 'block';
+                    });
+                } else {
+                    skillSections.forEach(section => {
+                        if (section.dataset.category === filter) {
+                            section.style.display = 'block';
+                        } else {
+                            section.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+
+        // Proficiency level filtering
+        const proficiencyFilter = document.getElementById('proficiency-filter');
+        proficiencyFilter.addEventListener('change', (e) => {
+            const level = e.target.value;
+            
+            skillItems.forEach(item => {
+                if (level === 'all' || item.dataset.proficiency === level) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Section toggle functionality
+        function toggleSection(sectionId) {
+            const content = document.getElementById(sectionId + '-content');
+            const button = event.target.closest('button');
+            const icon = button.querySelector('svg');
+            
+            if (content.style.display === 'none') {
+                content.style.display = 'grid';
+                icon.style.transform = 'rotate(0deg)';
+            } else {
+                content.style.display = 'none';
+                icon.style.transform = 'rotate(-90deg)';
+            }
+        }
+
+        // Smooth scroll for skill links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate progress bars on scroll
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('[style*="width"]');
+                    progressBars.forEach(bar => {
+                        const width = bar.style.width;
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.transition = 'width 1s ease-out';
+                            bar.style.width = width;
+                        }, 100);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe skill sections
+        skillSections.forEach(section => {
+            observer.observe(section);
+        });
+
+        // Search functionality (if needed)
+        function searchSkills(query) {
+            const searchTerm = query.toLowerCase();
+            skillItems.forEach(item => {
+                const skillName = item.querySelector('h3').textContent.toLowerCase();
+                const skillDescription = item.querySelector('p').textContent.toLowerCase();
+                
+                if (skillName.includes(searchTerm) || skillDescription.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
